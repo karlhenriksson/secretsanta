@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Santa</title>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="mainView">
+      <h1>Secret Santa!</h1>
+      <p>
+        Skriv ditt namn i rutan och tryck på knappen för att få namnet på den du
+        ska ge present till! Det finns ingen spärr för att skriva in andra namn
+        än ditt eget, men det är omoraliskt att tjuvtitta.
+      </p>
+      <input
+        id="inputName"
+        type="text"
+        placeholder="Ditt namn"
+        onchange="revealName()"
+      />
+      <button onclick="revealName()">Visa namn</button>
+      <p id="output"></p>
+      <p id="numSnowflakes"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
