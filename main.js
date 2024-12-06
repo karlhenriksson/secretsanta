@@ -55,7 +55,7 @@ function revealName() {
   // Gå igenom regex-dictionaryn
   for (const [key, value] of Object.entries(prompts)) {
     console.log(key);
-    if (new RegExp(key).test(string)) {
+    if (new RegExp(key, "i").test(string)) {
       const out = value.replace(
         "$",
         "Du ska ge en present för mindre än 40kr till:"
